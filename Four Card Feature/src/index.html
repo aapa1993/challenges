@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Four Card Feature</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-poppins flex items-center justify-center min-h-screen bg-custom">
+    <main class="flex flex-col w-300 gap-7 p-3 custom1:hidden">
+      <div class="text-center mb-7">
+        <h1 class="text-custom2 text-20">
+          Reliable, efficient delivery <br />
+          <span class="text-custom3 font-bold">Powered by Technology</span>
+        </h1>
+        <p class="text-15 text-custom1 mt-5">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </div>
+      <div class="border-t-4 border-cyan shadow-custom p-3 rounded-md">
+        <h2 class="text-custom2 font-bold mb-2 text-20">Supervisor</h2>
+        <p class="text-15 text-custom2 mb-8">
+          Monitors activity to identify project roadblocks
+        </p>
+        <img src="icon-supervisor.svg" alt="supervisor" class="ml-48" />
+      </div>
+      <div class="border-t-4 rounded-md p-3 shadow-custom border-red">
+        <h2 class="text-custom2 font-bold mb-2 text-20">Team Builder</h2>
+        <p class="text-15 text-custom2 mb-8">
+          Scans our talent network to create the optimal team for your project
+        </p>
+        <img
+          src="icon-team-builder.svg"
+          alt="icon-team-builder"
+          class="ml-48"
+        />
+      </div>
+      <div class="border-t-4 rounded-md p-3 shadow-custom border-orange">
+        <h2 class="text-custom2 font-bold mb-2 text-20">Karma</h2>
+        <p class="text-15 text-custom2 mb-8">
+          Regularly evaluates our talent to ensure quality
+        </p>
+        <img src="icon-karma.svg" alt="icon-karma" class="ml-48" />
+      </div>
+      <div class="border-t-4 rounded-md p-3 shadow-custom border-blue">
+        <h2 class="text-custom2 font-bold mb-2 text-20">Calculador</h2>
+        <p class="text-15 text-custom2 mb-8">
+          Uses data from past projects to provide better delivery estimates
+        </p>
+        <img src="icon-calculator.svg" alt="icon-calculator" class="ml-48" />
+      </div>
+    </main>
+
+    <main class="custom:hidden custom1:block">
+      <div class="text-center mb-7 flex flex-col">
+        <h1 class="text-custom2 text-30">
+          Reliable, efficient delivery <br />
+          <span class="text-custom3 font-bold">Powered by Technology</span>
+        </h1>
+        <p class="text-15 text-custom1 mt-5 w-500 ml-72">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </div>
+      <div class="grid grid-cols-custom grid-rows-custom mt-15 gap-4">
+        <div class="border-t-4 border-cyan bg-white shadow-custom p-3 rounded-lg w-360" style="grid-column: 1; grid-row: 2">
+          <h2 class="text-custom2 font-bold mb-2 text-20">Supervisor</h2>
+          <p class="text-15 text-custom2 mb-8">
+            Monitors activity to identify project roadblocks
+          </p>
+          <img src="icon-supervisor.svg" alt="supervisor" class="ml-64" />
+        </div>
+        <div class="border-t-4 border-red bg-white shadow-custom p-3 rounded-lg w-360" style="grid-column: 2; grid-row: 1">
+          <h2 class="text-custom2 font-bold mb-2 text-20">Team Builder</h2>
+          <p class="text-15 text-custom2 mb-8">
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <img
+            src="icon-team-builder.svg"
+            alt="icon-team-builder"
+            class="ml-64"
+          />
+        </div>
+        <div
+          class="border-t-4 border-orange bg-white shadow-custom p-3 rounded-lg w-360 mb-10"
+          style="grid-column: 2; grid-row: 3"
+        >
+          <h2 class="text-custom2 font-bold mb-2 text-20">Karma</h2>
+          <p class="text-15 text-custom2 mb-8">
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <img src="icon-karma.svg" alt="icon-karma" class="ml-64" />
+        </div>
+        <div class="border-t-4 border-blue bg-white shadow-custom p-3 rounded-lg w-360" style="grid-column: 3; grid-row: 2">
+          <h2 class="text-custom2 font-bold mb-2 text-20">Calculator</h2>
+          <p class="text-15 text-custom2 mb-8">
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <img src="icon-calculator.svg" alt="icon-calculator" class="ml-64" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
