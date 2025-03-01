@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:linear-gradient(330deg,#1a2d42,#2e4156,#aab7b7,#c0c8ca,#d4d8dd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  background-color: rgb(23,24,26);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 15px 15px 10px 0 #1a2a3b;
+  border-radius: 13px;
+  padding: 25px 30px;
+  gap: 20px;
+}
+
+main .result {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  background-color: #666;
+  padding: 0px;
+}
+
+main .one {
+  grid-column: 1;
+  grid-row: 3;
+
+}
+
+main .two {
+  grid-column: 2;
+  grid-row: 3;
+
+}
+
+main .three {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+main .mult {
+  grid-column: 4;
+  grid-row: 6;
+}
+
+main .four {
+  grid-column: 1;
+  grid-row: 4;
+}
+
+main .five {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+main .six {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+main .div {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+main .seven {
+  grid-column: 1;
+  grid-row: 5;
+}
+
+main .eight {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+main .nine {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+main .minus {
+  grid-column: 4;
+  grid-row: 5;
+}
+
+main .zero {
+  grid-column: 1;
+  grid-row: 6;
+}
+
+main .dot {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+main .equal {
+  grid-column: 3;
+  grid-row: 6;
+  background-color: rgb(48,201,111);
+}
+
+main .plus {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+main .del {
+  grid-column: 4;
+  grid-row: 2;
+  background-color: rgb(163, 9, 9);
+  color: white;
+}
+
+main .more {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  text-align: center;
+}
+
+main div {
+  box-shadow: 2px 2px 2px 2px #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  padding: 10px 10px;
+  border-radius: 7px;
+  font-weight: bold;
+  color: white;
+}
+
+main .n{
+    font-size: 25px;
+}
+
+main div:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+main .result {
+  pointer-events: none;
+  font-size: 25px;
+  height: 60px;
+}
+
+main .plus,
+.div,
+.minus,
+.mult{
+  background-color: rgb(255,169,13);
+  color: white;
+}
+
+main .one,.two,.three,.four,.five,.six,.seven,.eight,.nine,.zero,.dot,.more{
+    background-color: rgb(35,36,40);
+}
+
+/*Transitions*/
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-up.fade-up-show {
+  opacity: 1;
+  transform: translateY(0);
+}
