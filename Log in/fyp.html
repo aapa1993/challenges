@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="src/user.png" />
+    <script
+      src="https://kit.fontawesome.com/e522357059.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Reset Password</title>
+  </head>
+  <body>
+    <!--Forgot your password-->
+    <main class="rst-pwd pwd" id="rst-pwd">
+        <div class="return">
+          <div class="arrows">
+            <i class="fa-solid fa-arrow-left"></i>
+            <a href="index.html">Back</a>
+          </div>
+          <i class="fa-solid fa-question"></i>
+        </div>
+        <h1>Reset password</h1>
+        <p class="text">Enter the email associated with your account and we'll send an email with instructions to reset your password</p>
+        <form action="">
+          <div class="email">
+            <p>Email address</p>
+            <input type="text" placeholder="eg.johnframe@gmail.com">
+          </div>
+          <p id="send">Send Instructions</p>
+        </form>
+    </main>
+
+    <main class="check-pwd pwd" id="check-email">
+            <img src="src/enveloper.png" alt="envelope">
+            <h1>Check your email</h1>
+            <p>We have sent a password recover instructions to your email</p>
+            <p id="open-email">Open email app</p>
+            <a href="" class="skip">Skip, I'll confirm later</a>
+            <p>Did not receive the email? Check your spam filter, or <span id="return">try another email address</span></p>
+    </main>
+
+    <main class="new-pwd pwd" id="new-pwd">
+            <div class="back">
+                <i class="fa-solid fa-arrow-left"></i>
+                <a href="">Back</a>
+            </div>
+            <h1>Create new password</h1>
+            <p class="text">Your new password must be different from previous used passwords.</p>
+            <form action="">
+                <div class="password div-inputs">
+                    <p>Password</p>
+                    <input type="password">
+                    <p class="minimum">Must be at least 8 characters.</p>
+                </div>
+                <div class="confirm div-inputs">
+                    <p>Confirm Password</p>
+                    <input type="password" placeholder="Enter your password">
+                    <p class="minimum">Both passwords must watch</p>
+                </div>
+                <input type="submit" value="Reset Password">
+            </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
